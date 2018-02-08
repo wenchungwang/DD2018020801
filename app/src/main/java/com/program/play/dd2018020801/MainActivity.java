@@ -1,6 +1,8 @@
 package com.program.play.dd2018020801;
 
+import android.app.Notification;
 import android.content.Intent;
+import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -15,8 +17,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void click1(View v)
      {
-                 Intent it = new Intent(MainActivity.this, MyService.class);
-                 startService(it);
+
+         Intent it = new Intent(MainActivity.this, MyService.class);
+
+         startService(it);
      }
 
 
